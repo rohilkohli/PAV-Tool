@@ -1,0 +1,5 @@
+{
+  "name": "Asset Verification (PAV) Tool",
+  "description": "An immersive and intuitive tool for engineers to upload, search, filter, and verify physical assets from Excel or CSV files. The application features targeted updates, conditional editing logic, and a responsive, theme-aware user interface.",
+  "requestFramePermissions": []
+}
