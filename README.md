@@ -1,53 +1,211 @@
 <div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
+
+# 🛠️ PAV Tool - Physical Asset Verification
+
+### _Streamline your asset management with elegance and efficiency_
+
+[![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-Live-success?style=for-the-badge&logo=github)](https://rohilkohli.github.io/PAV-Tool/)
+[![React](https://img.shields.io/badge/React-19.2.0-61DAFB?style=for-the-badge&logo=react)](https://reactjs.org/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5.8.2-3178C6?style=for-the-badge&logo=typescript)](https://www.typescriptlang.org/)
+[![Vite](https://img.shields.io/badge/Vite-6.2.0-646CFF?style=for-the-badge&logo=vite)](https://vitejs.dev/)
+
+---
+
 </div>
 
-# Asset Verification (PAV) Tool
+## ✨ Overview
 
-This contains everything you need to run your app locally or deploy it to GitHub Pages.
+**PAV Tool** is a modern, intuitive web application designed for engineers and asset managers to efficiently verify and manage physical assets. Upload Excel or CSV files, search and filter assets with ease, and perform targeted updates with a beautiful, theme-aware interface.
 
-View your app in AI Studio: https://ai.studio/apps/drive/1SC5LIKnwzf_Jw6Rngo165aT8zTMsJZ31
+### 🎯 Key Features
 
-## GitHub Pages Deployment
+<table>
+<tr>
+<td width="50%">
 
-This application is configured to automatically deploy to GitHub Pages. 
+#### 📁 **Smart File Handling**
+- Upload Excel (.xlsx, .xls) and CSV files
+- Automatic data parsing and validation
+- Preserve original file structure
+- Export verified data seamlessly
 
-### Setup Instructions
+</td>
+<td width="50%">
 
-1. Go to your repository settings on GitHub
-2. Navigate to **Settings** → **Pages**
-3. Under "Build and deployment", set **Source** to **GitHub Actions**
-4. Push your changes to the `main` branch
+#### 🔍 **Advanced Filtering**
+- Search by Serial Number or Asset Code
+- Filter by Asset Type, Model, and Status
+- Real-time search results
+- Sort by any column
 
-The GitHub Actions workflow will automatically build and deploy your application. Once deployed, your site will be available at:
-`https://rohilkohli.github.io/PAV-Tool/`
+</td>
+</tr>
+<tr>
+<td width="50%">
 
-### How it works
+#### ✏️ **Intelligent Editing**
+- In-line asset updates
+- Conditional editing logic
+- Bulk verification capabilities
+- Engineer name and date tracking
 
-- The workflow is triggered on every push to the `main` branch
-- It installs dependencies, builds the application, and deploys to GitHub Pages
-- The build output is configured with the correct base path for GitHub Pages
+</td>
+<td width="50%">
 
-## Run Locally
+#### 🎨 **Modern UI/UX**
+- Responsive design for all devices
+- Theme-aware interface
+- Smooth animations and transitions
+- Intuitive navigation
 
-**Prerequisites:**  Node.js
+</td>
+</tr>
+</table>
 
+---
 
-1. Install dependencies:
-   ```bash
-   npm install
-   ```
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   ```bash
-   npm run dev
-   ```
+## 🚀 Quick Start
 
-## Build for Production
+### Prerequisites
 
-To build the application for production:
+- **Node.js** (v16 or higher)
+- **npm** or **yarn**
+
+### Installation
+
 ```bash
-npm run build
+# Clone the repository
+git clone https://github.com/rohilkohli/PAV-Tool.git
+
+# Navigate to project directory
+cd PAV-Tool
+
+# Install dependencies
+npm install
+
+# Start development server
+npm run dev
 ```
 
-The built files will be in the `dist/` directory.
+Your application will be running at `http://localhost:5173` 🎉
+
+---
+
+## 🏗️ Tech Stack
+
+<div align="center">
+
+| Technology | Purpose |
+|------------|---------|
+| **React 19** | UI Framework |
+| **TypeScript** | Type Safety |
+| **Vite** | Build Tool & Dev Server |
+| **Local Storage** | Data Persistence |
+
+</div>
+
+---
+
+## 📖 Usage Guide
+
+### 1️⃣ Upload Assets
+- Click the **Upload** button
+- Select your Excel or CSV file
+- Confirm the upload
+
+### 2️⃣ Search & Filter
+- Use the search bar to find specific assets
+- Apply filters for Asset Type, Model, or PAV Status
+- Sort columns by clicking headers
+
+### 3️⃣ Verify Assets
+- Click on any asset to edit
+- Update PAV Status, Engineer Name, and Date
+- Changes are automatically saved
+
+### 4️⃣ Export Data
+- Click **Download Verified** to export your updated data
+- Maintains original file format and structure
+
+---
+
+## 🌐 Deployment
+
+### GitHub Pages (Automatic)
+
+This project is configured for automatic deployment to GitHub Pages:
+
+1. **Enable GitHub Pages**
+   - Go to repository **Settings** → **Pages**
+   - Set **Source** to **GitHub Actions**
+
+2. **Deploy**
+   - Push changes to the `main` branch
+   - GitHub Actions will automatically build and deploy
+
+3. **Access**
+   - Visit: `https://rohilkohli.github.io/PAV-Tool/`
+
+### Manual Build
+
+```bash
+# Build for production
+npm run build
+
+# Preview production build
+npm run preview
+```
+
+Build artifacts will be in the `dist/` directory.
+
+---
+
+## 📂 Project Structure
+
+```
+PAV-Tool/
+├── components/          # React components
+├── utils/              # Utility functions
+├── App.tsx             # Main application component
+├── types.ts            # TypeScript type definitions
+├── index.tsx           # Application entry point
+├── vite.config.ts      # Vite configuration
+└── package.json        # Project dependencies
+```
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome! Feel free to:
+
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+---
+
+## 📄 License
+
+This project is open source and available for use under the terms specified by the repository owner.
+
+---
+
+## 💬 Support
+
+For questions, issues, or suggestions:
+- 🐛 [Report a Bug](https://github.com/rohilkohli/PAV-Tool/issues)
+- 💡 [Request a Feature](https://github.com/rohilkohli/PAV-Tool/issues)
+- 📧 Contact the maintainer
+
+---
+
+<div align="center">
+
+### ⭐ Star this repository if you find it helpful!
+
+**Made with ❤️ for efficient asset management**
+
+</div>
